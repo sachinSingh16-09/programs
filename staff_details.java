@@ -93,11 +93,16 @@ class Administration extends staff{
         Contract ob3= new Contract();
         System.out.println("Enter the details of the contract staff:");
         ob3.accept();
+        Administration ob4= new Administration();
+        System.out.println("Enter the details of administration staff:");
+        ob4.accept();
         System.out.println("The details of the teaching staff is:");
         ob1.display();
         System.out.println("The details of the technical staff is:");
         ob2.display();
         System.out.println("The details of the contract staff is:");
         ob3.display();
+        System.out.println("The details of the administration staff is:");
+        ob4.display();
     }
 }
