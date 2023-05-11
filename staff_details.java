@@ -66,6 +66,22 @@ class Contract extends staff{
         System.out.println("Experience:"+experience);
     }
 }
+class Administration extends staff{
+    String  position;
+    int year;
+    public void accept(){
+        Scanner sc= new Scanner(System.in);
+        super.accept();
+        System.out.println("Enter the Position:");
+        position= sc.next();
+        System.out.println("Enter the Experience:");
+        year= sc.nextInt();
+}
+    public void display(){
+        super.display();
+        System.out.println("Position:"+position);
+        System.out.println("Experience"+year);
+    }
  class staff_details {
     public static void main(String[] args) {
         Teaching ob1= new Teaching();
